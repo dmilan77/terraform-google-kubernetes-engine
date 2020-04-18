@@ -474,6 +474,11 @@ variable "release_channel" {
   description = "(Beta) The release channel of this cluster. Accepted values are `UNSPECIFIED`, `RAPID`, `REGULAR` and `STABLE`. Defaults to `UNSPECIFIED`."
   default     = null
 }
+variable "boot_disk_kms_key" {
+  type        = string
+  description = "(Beta) The release channel of this cluster. Boot disk encryption key. Defaults to `null`."
+  default     = null
+}
 
 variable "enable_shielded_nodes" {
   type        = bool
