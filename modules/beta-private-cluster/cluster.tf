@@ -334,7 +334,6 @@ resource "google_container_node_pool" "pools" {
       local.service_account,
     )
     preemptible = lookup(each.value, "preemptible", false)
-    boot_disk_kms_key =   lookup(each.value, "boot_disk_kms_key", "")
 
 
     oauth_scopes = concat(
